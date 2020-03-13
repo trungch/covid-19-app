@@ -91,8 +91,19 @@ html{
 }
 
 .feature-section h5.mb-2 {
-    font-weight: 400;
-    font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#benefits.feature-section h5.mb-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.feature-section .icon-sm {
+  border-radius: 13px !important;
 }
 
 /* -----------------------------------------
@@ -324,9 +335,10 @@ a:hover{
 }
 .solid-white-btn, .outline-white-btn{
     padding: 12px 30px;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-weight: 700;
 }
+
 .solid-white-btn{
     background: #ffffff;
     border-color: #ffffff;
@@ -409,9 +421,19 @@ select.form-control.has-value{
     font-size: 13px;
 }
 
-.section-heading h2 span{
-    font-weight: 400;
-    font-size: 2rem;
+.section-heading h2 {
+  color: #2D3691;
+}
+
+.section-heading h2 span {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.section-heading p {
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .z-index{
@@ -632,6 +654,7 @@ select.form-control.has-value{
     border-radius: 3px; 
     display: block; 
     padding: 0.25rem;
+    height: 60px;
     width: 60px;
 }
 
@@ -853,6 +876,11 @@ select.form-control.has-value{
     height: 1400px;
     background-color: rgba(24,16,224,.2);
     top: 70px;
+}
+
+.hero-content-left .action-btns .btn {
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .hero-content-left .headline {
@@ -1359,12 +1387,14 @@ select.form-control.has-value{
 }
 
 
-.work-process-icon-wrap{
+.work-process-icon-wrap {
+    border-radius: 13px;
     position: relative;
     display: inline-block;
     width: 70px;
     height: 70px;
 }
+
 @media screen and (max-width: 991px){
     .single-work-process {
         width: calc(50% - 30px);
@@ -1652,7 +1682,6 @@ select.form-control.has-value{
     color: #707070;
 }
 #accordion .card-header h6{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 #accordion .card-body {
@@ -1774,7 +1803,7 @@ select.form-control.has-value{
 ============================================*/
 
 .scroll-top.open {
-    bottom: 30px;
+    bottom: 20px;
 }
 button.scroll-top:focus{
     outline: none;
@@ -1784,7 +1813,7 @@ button.scroll-top:focus{
     height: 40px;
     line-height: 40px;
     position: fixed;
-    bottom: 105%;
+    bottom: -40px;
     right: 50px;
     font-size: 16px;
     border-radius: 4px;
@@ -1793,7 +1822,7 @@ button.scroll-top:focus{
     text-align: center;
     cursor: pointer;
     background: #2d3691;
-    transition: 1s ease;
+    transition: 0.65s ease-in-out;
     border: none;
 }
 .scroll-top span {
@@ -2688,4 +2717,24 @@ a.view-details-link span {
 a.view-details-link:hover span {
     transform: translateX(3px);
     margin-left: 6px;
+}
+
+
+/* Footer */
+.footer-bottom {
+  background: #283080;
+  font-size: 14px;
+  color: #C0C3E5;
+}
+
+.footer-bottom a {
+  border-bottom: 1px dotted #EEEFF9;
+  color: #C0C3E5;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus,
+.footer-bottom a:active {
+  color: #fff;
+  border-color: #fff;
 }
